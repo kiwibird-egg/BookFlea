@@ -16,3 +16,23 @@ menuBtn.addEventListener('mousedown', ()=>{
         menuIcon.style.display = 'block';
     }
 });
+
+const signOutBtn = document.querySelector(".sep-menu__mypage__wrap__signout");
+
+signOutBtn.addEventListener('mousedown', ()=>{
+    location.href="http://naver.com";
+});
+
+const bookmarkBtn = document.querySelector(".bookmark-wrap");
+bookmarkBtn.addEventListener('mousedown', ()=>{
+    location.href="http://naver.com";
+});
+
+const navLogo1 = document.querySelector(".nav-small__col-mid__logo-wrap");
+    navLogo1.addEventListener('mousedown', ()=>{
+    location.href="http://naver.com";
+});
+const navLogo2 = document.querySelector(".nav-big__col-mid__logo-wrap");
+    navLogo2.addEventListener('mousedown', ()=>{
+    location.href="http://naver.com";
+});

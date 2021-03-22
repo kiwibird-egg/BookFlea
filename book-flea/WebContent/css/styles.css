@@ -4,3 +4,7 @@
 @import "variables.css";
 
 @import "./component/nav.css";
+
+body{
+    font-family: "Open Sans", sans-serif;
+}

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,12 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css"> <!--JSP 옮길때지우기-->
-    <style>
-        body{
-            background-color: #ffffff;
-        }
-    </style>
+     
 </head>
 <body>
     <!--=================================================-->
@@ -89,17 +86,6 @@
     <div class="margin-top-maker" style="margin-top: 63px; height: 1px; width: 100%;"></div>
 	<div class="margin-top-maker-2" style="margin-top: 52px; height: 0px; width: 100%;"></div>
     <!--=================================================-->
-    <main style="height:190vh; display: flex; justify-content: flex-start; align-items: flex-start;">
-      
-        <div class="table" style="width: 200px; height: 200px; background-color: green;"> </div>
-        <div class="table" style="width: 200px; height: 200px; background-color: red"> </div>
-        <div class="table" style="width: 200px; height: 200px; background-color: blue;"> </div>
-
-    </main>
-    <script src="js/component/nav.js"></script>
-    <script
-    src="https://kit.fontawesome.com/6478f529f2.js"
-    crossorigin="anonymous"
-    ></script>
+    
 </body>
 </html>
