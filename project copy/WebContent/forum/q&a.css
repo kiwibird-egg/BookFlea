@@ -1,0 +1,153 @@
+@charset "UTF-8";
+:root {
+	--border-color : #ddd;
+	--background-color : #fff;
+	--bar-color : #f1f1f1;
+}
+/*******************************************/
+.newPost_btn{
+	height: 35px;
+
+    background : #f1f1f1;
+    border : 1px solid #ccc;
+    border-radius : 0px;
+    margin : 15px;
+}
+.newPost_btn:hover{
+	    background : #e4e4e4;
+    cursor : pointer;
+}
+.btn{
+	width : 70px;
+	height:35px;
+	background : #f1f1f1;
+    border : 1px solid #ccc;
+    border-radius : 0px;
+    margin : 15px 5px 15px 5px;
+}
+.btn:hover{
+	background : #e4e4e4;
+    cursor : pointer;
+}
+.upPost_btn{
+	height: 35px;
+    background : #f1f1f1;
+    border : 1px solid #ccc;
+    border-radius : 0px;
+    margin : 15px;
+}
+.upPost_btn:hover{
+	   background : #e4e4e4;
+    cursor : pointer;
+}
+.editor_wrap{
+	border : 1px solid var(--border-color);
+}
+.subject_sec{
+	padding : 5px;
+	border-bottom : 1px solid var(--border-color);
+}
+.content_sec{
+	padding:5px;
+}
+.postSbj_text{
+	width:95%;
+	border:none;
+	resize:none;
+}
+.postContent_text{
+	width:95%;
+	border:none;
+	resize:none;
+}
+.postSbj_text:focus{
+	outline:none;
+}
+.postContent_text:focus{
+	outline:none;
+}
+ul{
+   list-style:none;
+   padding-left:0px;
+}
+
+.list_content{
+	display:inline-block;
+	width:100%; 
+	max-width:1000px; 
+	/*
+	border:1px solid black;
+	*/
+}
+.ul-col{
+	font-size : 16px;
+}
+.col:first-child{
+	border-top : 1px solid var(--border-color);
+}
+.col {
+	
+	border-bottom : 1px solid var(--border-color);
+	display:block;
+	box-sizing:border-box;
+
+	display:flex;
+	align-items:center;
+	padding : 15px;
+}
+
+.colSbj{
+	display:inline-block;
+	width:60%;
+	text-align:left;
+}
+.colId{
+	display:inline-block;
+	width:20%;
+}
+.colDate{
+	display:inline-block;
+	width:20%;
+}
+
+
+.view_wrap{
+	max-width:1000px;
+	width:90vw;
+	display:inline-block;
+}
+.view_subject_sec{
+	text-align:left;
+	padding : 20px 20px 10px 20px;
+	border-top : 1px solid var(--border-color);
+}
+.view_info_sec{
+	text-align:left;
+	font-size:70%;
+	color:grey;
+	padding : 0px 20px 20px 20px;
+	border-bottom : 1px solid var(--border-color);
+	
+}
+.view_content_sec{
+
+	text-align:left;
+	padding : 20px;
+	border-bottom : 1px solid var(--border-color);
+}
+
+.view_footer {
+	text-align:left;
+	display:flex-box;
+}
+@media screen and (max-width: 768px){
+	.ul-col{
+		font-size:14px;
+	}
+	.col {
+		padding : 10px;
+	}
+	.col a {
+	display:block;
+	}
+}
