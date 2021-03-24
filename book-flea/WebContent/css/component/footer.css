@@ -1,0 +1,18 @@
+footer{
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.01);
+    border-top: 1px solid rgb(229,229,229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__copyrights{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(156, 163, 175);
+    font-size: 18px;
+}

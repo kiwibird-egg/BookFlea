@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css"> <!--JSP 옮길때지우기-->
 
 </head>
 <body>
+    <div class="temp" style="height: 100vh; color:white;"></div>
     <footer>
-        <div class="footer__copyrights">
-            ⓒ BOOK:FLEA. All Rights Reserved.
-        </div> 
+            <div class="footer__copyrights">
+                ⓒ 2021 BOOKFLEA. All Rights Reserved.
+            </div>
     </footer>
 </body>
 </html>

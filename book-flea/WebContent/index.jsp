@@ -9,17 +9,13 @@
 </head>
 <body>
 	<jsp:include page="./component/nav.jsp" />
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
-	<div>12312321311323132321312</div>
 	
+	<div style="width:100%; height:50vh; display:flex; justify-content:center; align-items:center;">
+		<p>HERE IS INDEX.JSP!!!</p>
+	</div>
+
+	<jsp:include page="./component/footer.jsp" />
+
 	<script src="js/component/nav.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>

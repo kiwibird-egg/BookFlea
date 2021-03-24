@@ -141,9 +141,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.sep-menu__col:hover{
-    
-}
+
 
 .nav-small__col-left__i-wrap > i:nth-child(2){
     display: none;
@@ -200,7 +198,7 @@
     color:rgb(50, 50, 50);
 }
 .nav-big__col-left__i-wrap:hover > i{
-    color:rgb(100,100,100);
+    color:rgb(127, 194, 65);
 }
 .nav-big__col-mid__logo-wrap >   h1{
     font-size: 30px;
@@ -211,7 +209,7 @@
     color:rgb(50, 50, 50);
 }
 .nav-big__col-right__i-wrap:hover > i{
-    color:rgb(100,100,100);
+    color:rgb(127, 194, 65);
 }
 /*========================================*/
 .nav-2__menu{
@@ -252,14 +250,14 @@
 }
 /*========================================*/
 /*========================================*/
-@media (max-width:425px){ /*일반스마트폰*/
+@media (max-width:425px){ /*�씪諛섏뒪留덊듃�룿*/
 
 }
 
-@media (min-width:426px) and (max-width:768px){/* 소형 태블릿 */
+@media (min-width:426px) and (max-width:768px){/* �냼�삎 �깭釉붾┸ */
 
 }
-@media (min-width:769px){ /* 태블릿 */
+@media (min-width:769px){ /* �깭釉붾┸ */
     .nav-big__col-left{
         justify-content: flex-end;
     }
