@@ -1,0 +1,19 @@
+main{
+	padding:20px;
+	min-height: calc(100vh - 165px);
+}
+
+@media (max-width:425px){ /*占쎌뵬獄쏆꼷�뮞筌띾뜇�뱜占쎈？*/
+
+}
+
+@media (min-width:426px) and (max-width:768px){/* 占쎈꺖占쎌굨 占쎄묶�뇡遺얄뵺 */
+
+}
+@media (min-width:1024px){ /* 占쎄묶�뇡遺얄뵺 */
+	main{
+		max-width: 1024px;
+		min-height: calc(100vh - 217px);
+		margin: 0px calc( calc(100vw - 1024px) / 2 );
+	}
+}

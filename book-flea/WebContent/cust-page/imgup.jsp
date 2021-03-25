@@ -33,14 +33,14 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 	<jsp:include page="./component/nav.jsp" />
 	
 	<span>success</span>
 	
-	<script src="js/component/nav.js"></script>
+	<script src="../js/component/nav.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>

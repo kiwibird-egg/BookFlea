@@ -5,7 +5,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 	<jsp:include page="./component/nav.jsp" />
@@ -15,7 +15,7 @@
 		<input type="submit" value="업로드"><br><br> 
 	</form> 
 	<span>E:\GitHub\BookFlea\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\book-flea\fileFolder</span>
-	<script src="js/component/nav.js"></script>
+	<script src="../js/component/nav.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>

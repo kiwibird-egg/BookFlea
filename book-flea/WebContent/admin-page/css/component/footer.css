@@ -1,0 +1,18 @@
+footer{
+    width: 100%;
+    background-color: #292A2D;
+    border-top: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__copyrights{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(156, 163, 175);
+    font-size: 16px;
+}

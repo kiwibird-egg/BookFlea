@@ -30,9 +30,9 @@ bookmarkBtn.addEventListener('mousedown', ()=>{
 
 const navLogo1 = document.querySelector(".nav-small__col-mid__logo-wrap");
     navLogo1.addEventListener('mousedown', ()=>{
-    location.href="/BOOKFLEA/index.jsp";
+    location.href="/BOOKFLEA/admin-page/main.jsp";
 });
 const navLogo2 = document.querySelector(".nav-big__col-mid__logo-wrap");
     navLogo2.addEventListener('mousedown', ()=>{
-    location.href="/BOOKFLEA/index.jsp";
+    location.href="/BOOKFLEA/admin-page/main.jsp";
 });

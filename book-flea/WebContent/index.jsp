@@ -5,18 +5,23 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="/BOOKFLEA/cust-page/css/styles.css">
 </head>
 <body>
-	<jsp:include page="./component/nav.jsp" />
+	<jsp:include page="cust-page/component/nav.jsp" />
 	
-	<div style="width:100%; height:50vh; display:flex; justify-content:center; align-items:center;">
-		<p>HERE IS INDEX.JSP!!!</p>
-	</div>
+	<main>	
+		<div>
+			<p>HERE IS INDEX.JSP!</p>
+			<br><a href="/BOOKFLEA/admin-page/main.jsp">admin-page/main.jsp</a>
+			
+			<br><a href="/BOOKFLEA/admin-page/main.jsp">cust-page/upload.jsp</a>
+		</div>
+	</main>
 
-	<jsp:include page="./component/footer.jsp" />
+	<jsp:include page="cust-page/component/footer.jsp" />
 
-	<script src="js/component/nav.js"></script>
+	<script src="/BOOKFLEA/cust-page/js/component/nav.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>

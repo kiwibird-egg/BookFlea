@@ -14,7 +14,7 @@
             <div class="nav-small__col nav-small__col-mid">
                 <div class="nav-small__col-mid__logo-wrap logo-wrap">
                     <h1>BOOK</h1>
-                    <img src="./img/logo.png" alt="" >
+                    <img src="/BOOKFLEA/admin-page/component/logo.png" alt="" >
                     <h1>FLEA</h1>
                 </div>
             </div>
@@ -56,7 +56,7 @@
             <div class="nav-big__col nav-big__col-mid">
                 <div class="nav-big__col-mid__logo-wrap logo-wrap">
                     <h1>BOOK</h1>
-                    <img src="./img/logo.png" alt="" >
+                    <img src="/BOOKFLEA/admin-page/component/logo.png" alt="" >
                     <h1>FLEA</h1>
                 </div>
             </div>

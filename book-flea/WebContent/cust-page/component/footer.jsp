@@ -10,7 +10,6 @@
 
 </head>
 <body>
-    <div class="temp" style="height: 100vh; color:white;"></div>
     <footer>
             <div class="footer__copyrights">
                 ⓒ 2021 BOOKFLEA. All Rights Reserved.

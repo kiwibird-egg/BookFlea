@@ -5,6 +5,7 @@
 
 @import "./component/nav.css";
 @import "./component/footer.css";
+@import "./component/main.css";
 
 body{
     font-family: "Open Sans", sans-serif;
