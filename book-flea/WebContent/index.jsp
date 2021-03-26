@@ -1,27 +1,45 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
-<link rel="stylesheet" href="/BOOKFLEA/cust-page/css/styles.css">
+<title>북플리-온라인중고도서</title>
+<link rel="stylesheet" href="/BOOKFLEA/cust/css/styles.css">
 </head>
 <body>
-	<jsp:include page="cust-page/component/nav.jsp" />
+	<jsp:include page="./cust/component/nav.jsp" />
 	
-	<main>	
+	<main style="display:none">	
 		<div>
-			<p>HERE IS INDEX.JSP!</p>
-			<br><a href="/BOOKFLEA/admin-page/main.jsp">admin-page/main.jsp</a>
+			<p>인덱스 페이지</p>
+			<br><br><a href="/BOOKFLEA/admin/page/main.jsp">admin/page/main.jsp</a>
 			
-			<br><a href="/BOOKFLEA/admin-page/main.jsp">cust-page/upload.jsp</a>
+			<br><br><a href="/BOOKFLEA/cust/page/upload.jsp">cust/page/upload.jsp</a>
+			<br><br><a href="/BOOKFLEA/cust/page/sign-in.jsp">cust/page/sign-in.jsp</a>
 		</div>
 	</main>
+	
+	<%
+	String sec = request.getParameter("sec");
+	if(sec!=null){		
+		switch(sec){
+		case "book-search":%> <jsp:include page="./cust/page/book-search.jsp"/> <% break;
+		case "book-best":%> <jsp:include page="./cust/page/book-best.jsp"/> <% break;
+		case "book-all":%><jsp:include page="./cust/page/book-all.jsp"/> <% break;
+		case "book-mark":%><jsp:include page="./cust/page/book-mark.jsp"/> <% break;
+		case "my":%><jsp:include page="./cust/page/my.jsp"/> <% break;
+		default :  break;
+		}
+	}
+	else{
+		%><main>index!</main><%
+	}
+	%>
 
-	<jsp:include page="cust-page/component/footer.jsp" />
+	<jsp:include page="./cust/component/footer.jsp" />
 
-	<script src="/BOOKFLEA/cust-page/js/component/nav.js"></script>
+	<script src="/BOOKFLEA/cust/js/component/nav.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>

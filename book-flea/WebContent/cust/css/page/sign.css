@@ -1,0 +1,82 @@
+.main__wrap{
+	height:100%;
+	width:100%;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/*================================*/
+.sign-wrap{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items : center;
+}
+.sign-box__title{
+	font-size: 24px;
+	font-weight:600;
+	color: rgba(17, 24, 39,1);
+	margin: 30px 0px;
+}
+.sign-box{
+	padding: 10px 0 10px 0;
+	width:350px;
+	border: var(--border);
+	border-radius:8px;
+	box-shadow : 0px 2px 5px rgba(0,0,0,0.05);
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+	align-items : center;
+	background-color:white;
+}
+.sign-box__form{
+	width:300px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+/*====================================*/
+.sign-text{
+	width:300px;
+	padding:10px;
+	height:38px;
+	border: 1px solid #D1D5DB;
+	border-radius:6px;
+	margin: 10px 0px; /*!!!!!!!!!!!!!!!!!*/
+}
+.sign-text:focus{
+	border: 1px solid #7fc241;
+}
+/*====================================*/
+.sign-submit{
+	width:300px;
+	height:38px;
+	background-color: rgba(127,194,65,1);
+	border:0;
+	border-radius:6px;
+	color:white;
+	font-size:16px;
+	font-weight:500;
+	margin: 10px 0px; /*!!!!!!!!!!!!!!!!!*/
+	cursor:pointer;
+}
+.sign-submit:hover{
+	background-color: rgba(127,194,65,0.7)
+}
+.sign-submit:focus{
+	outline:none;
+}
+/*====================================*/
+.sign-box__under{
+	color: var(--color1);
+	font-size:14px;
+	text-decoration: underline;
+	width:300px;
+	display:flex;
+	justify-content:center;
+	margin: 10px 0px; /*!!!!!!!!!!!!!!!!!*/
+}
