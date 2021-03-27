@@ -38,9 +38,9 @@
                     </div>
                 </li>
                 <div class="sep-menu__hr"></div>
-                <li><span class="sep-menu__col"><a href="/BOOKFLEA/cust/page/book-search.jsp">도서명 검색</a></span></li>
-                <li><span class="sep-menu__col"><a href="/BOOKFLEA/cust/page/book-best.jsp">베스트 셀러</a></span></li>
-                <li><span class="sep-menu__col"><a href="/BOOKFLEA/cust/page/book-all.jsp">전체 도서</a></span></li>
+                <li><span class="sep-menu__col"><a href="?sec=book-search">도서명 검색</a></span></li>
+                <li><span class="sep-menu__col"><a href="?sec=book-best">베스트 셀러</a></span></li>
+                <li><span class="sep-menu__col"><a href="?sec=book-all">전체 도서</a></span></li>
             </ul>
         </div>
     </nav>

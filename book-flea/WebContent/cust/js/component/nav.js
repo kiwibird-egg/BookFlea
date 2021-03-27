@@ -31,7 +31,6 @@ bookmarkBtn.forEach(i =>{
     });
 });
 
-
 const navLogo = document.querySelectorAll(".logo-wrap");
 navLogo.forEach(i =>{
     i.addEventListener('click', ()=>{

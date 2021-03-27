@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div class="nav-small__col nav-small__col-right">
-                <div class="nav-small__col-right__i-wrap bookmark-wrap">
-                    <i class="far fa-bookmark "></i>
+                <div class="nav-small__col-right__i-wrap fa-home-wrap">
+                     <i class="fas fa-home"></i>
                 </div>
             </div>
         </div>
@@ -38,9 +38,9 @@
                     </div>
                 </li>
                 <div class="sep-menu__hr"></div>
-                <li><span class="sep-menu__col">유저관리</span></li>
-                <li><span class="sep-menu__col">주문관리</span></li>
-                <li><span class="sep-menu__col"><a href="/BOOKFLEA/index.jsp">북플리</a></span></li>
+                <li><span class="sep-menu__col"><a href="?sec=book">도서관리</a></span></li>
+                <li><span class="sep-menu__col"><a href="?sec=order">주문관리</a></span></li>
+                <li><span class="sep-menu__col"><a href="?sec=user">유저관리</a></span></li>
             </ul>
         </div>
     </nav>
@@ -61,17 +61,16 @@
                 </div>
             </div>
             <div class="nav-big__col nav-big__col-right">
-                <div class="nav-big__col-right__i-wrap bookmark-wrap">
+                <div class="nav-big__col-right__i-wrap fa-home-wrap">
                     <i class="fas fa-home"></i>
                 </div>
             </div>
         </div>
         <div class="nav-2__menu">
             <ul>
-            	<li><a href="#">도서관리</a></li>
-                <li><a href="#">주문관리</a></li>
-                <li><a href="#">유저관리</a></li>
-                <li><a href="/BOOKFLEA/index.jsp">북플리</a></li>
+            	<li><a href="?sec=book">도서관리</a></li>
+                <li><a href="?sec=order">주문관리</a></li>
+                <li><a href="?sec=user">유저관리</a></li>
             </ul>
         </div>
     </nav>

@@ -12,7 +12,7 @@
 <body>
     <footer>
             <div class="footer__copyrights">
-                <a href="/BOOKFLEA/admin/page/main.jsp">ⓒ 2021 BOOKFLEA. All Rights Reserved.</a>
+                <a href="/BOOKFLEA/admin.jsp">ⓒ 2021 BOOKFLEA. All Rights Reserved.</a>
             </div>
     </footer>
 </body>

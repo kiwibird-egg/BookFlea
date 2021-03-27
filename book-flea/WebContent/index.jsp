@@ -29,11 +29,13 @@
 		case "book-all":%><jsp:include page="./cust/page/book-all.jsp"/> <% break;
 		case "book-mark":%><jsp:include page="./cust/page/book-mark.jsp"/> <% break;
 		case "my":%><jsp:include page="./cust/page/my.jsp"/> <% break;
+		case "sign-in":%><jsp:include page="./cust/page/sign-in.jsp"/> <% break;
+		case "sign-up":%><jsp:include page="./cust/page/sign-up.jsp"/> <% break;
 		default :  break;
 		}
 	}
 	else{
-		%><main>index!</main><%
+		%><main>index!<br><a href="?sec=sign-in">login</a></main><%
 	}
 	%>
 
