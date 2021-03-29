@@ -19,7 +19,9 @@
 			<br><br><a href="/BOOKFLEA/cust/page/sign-in.jsp">cust/page/sign-in.jsp</a>
 		</div>
 	</main>
-	
+	<%
+		
+	%>
 	<%
 	String sec = request.getParameter("sec");
 	if(sec!=null){		
@@ -27,15 +29,15 @@
 		case "book-search":%> <jsp:include page="./cust/page/book-search.jsp"/> <% break;
 		case "book-best":%> <jsp:include page="./cust/page/book-best.jsp"/> <% break;
 		case "book-all":%><jsp:include page="./cust/page/book-all.jsp"/> <% break;
-		case "book-mark":%><jsp:include page="./cust/page/book-mark.jsp"/> <% break;
-		case "my":%><jsp:include page="./cust/page/my.jsp"/> <% break;
+		case "book-mark": if(session.getAttribute("userId")==null){response.sendRedirect("?sec=sign-in");} %><jsp:include page="./cust/page/book-mark.jsp"/> <% break;
+		case "my": %> <jsp:include page="./cust/page/my.jsp"/> <% break;
 		case "sign-in":%><jsp:include page="./cust/page/sign-in.jsp"/> <% break;
 		case "sign-up":%><jsp:include page="./cust/page/sign-up.jsp"/> <% break;
 		default :  break;
 		}
 	}
 	else{
-		%><main>index!<br><a href="?sec=sign-in">login</a></main><%
+		%><main>index!</main><%
 	}
 	%>
 

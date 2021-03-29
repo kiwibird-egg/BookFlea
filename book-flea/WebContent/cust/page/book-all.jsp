@@ -9,7 +9,7 @@
 <body>
 	<main>	
 		<div>
-			<p>전체도서</p>
+			<div class="page-title">전체도서</div>
 		</div>
 	</main>
 </body>

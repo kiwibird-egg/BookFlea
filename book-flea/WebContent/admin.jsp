@@ -24,6 +24,10 @@
 		case "order":%> <jsp:include page="./admin/page/manage-order.jsp"/> <% break;
 		case "user":%><jsp:include page="./admin/page/manage-user.jsp"/> <% break;
 		case "my":%><jsp:include page="./admin/page/my.jsp"/> <% break;
+		case "sign-in":%><jsp:include page="./admin/page/sign-in.jsp"/> <% break;
+		case "book-edit":%> <jsp:include page="./admin/page/manage-book-edit.jsp"/> <% break;
+		case "book-add":%> <jsp:include page="./admin/page/manage-book-add.jsp"/> <% break;
+		
 		default :  break;
 		}
 	}

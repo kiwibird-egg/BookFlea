@@ -7,6 +7,11 @@
 @import "./component/footer.css";
 @import "./component/main.css";
 
+@import "./page/sign.css";
+@import "./page/my.css";
+@import "./page/all.css";
+@import "./page/manage-book.css";
+
 body{
     font-family: "Open Sans", sans-serif;
 }

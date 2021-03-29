@@ -21,7 +21,7 @@ menuBtn.addEventListener('click', ()=>{
 const signOutBtn = document.querySelector(".sep-menu__mypage__wrap__signout");
 
 signOutBtn.addEventListener('click', ()=>{
-    location.href="http://naver.com";
+    location.href="/BOOKFLEA/cust/action/sign-out.jsp";
 });
 
 const bookmarkBtn = document.querySelectorAll(".bookmark-wrap");

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<main>	
-		<div class="main__wrap">
+		<div class="sign-main__wrap">
 			<div class="sign-wrap">
 				<div class="sign-box">
 					<div class="sign-box__title">Sign Up</div>

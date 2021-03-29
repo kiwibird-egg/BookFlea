@@ -1,0 +1,97 @@
+.book-list > .book-list__li:not(:last-child){
+	/*margin: 10px 10px;*/
+}
+
+.book-list__li{
+	padding:10px 20px;
+	display:flex;
+	justify-content: space-between;
+	
+}
+
+.book-list__li-title{
+	font-weight:600;
+	font-size:20px;
+}
+.book-list__li-title > div{
+	text-align:center;
+}
+.book-list > .book-list__li:not(.book-list__li-title){
+	cursor:pointer;
+}
+
+.book-list__li > div{
+	display:block;
+}
+.book-list__li > div:nth-child(1){/*title*/
+	width: 40%;
+}
+.book-list__li > div:nth-child(2){ /*author*/
+	width: 15%;
+}
+.book-list__li > div:nth-child(3){/*publisher*/
+	width: 15%;
+}
+.book-list__li > div:nth-child(4){/*price*/
+	width: 15%;
+}
+
+.book-edit-form{
+	display:flex;
+	flex-direction:column;
+}
+
+.book-edit-form > ul > li{
+	padding:10px 20px;
+	display:flex;
+	flex-direction:column;
+}
+.book-edit-form > ul > li > label{
+	margin-left:5px;
+	margin-bottom:5px;
+}
+.book-edit-form > ul > li > input{
+	height:38px;
+	border: var(--border);
+	border-radius:6px;
+	background-color:#1E1F21;
+	color: white;
+	padding: 0 10px;
+}
+
+.book-edit-form__btns{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	padding:10px 20px;
+}
+
+.book-edit-form__btns button{
+	height:38px;
+}
+.book-edit-form__btns .btn-green{
+	width:50%;
+}
+.book-edit-form__btns .btn-white{
+	width:50%;
+}
+
+.book-edit-form__btns__left{
+	display:flex;
+	justify-content: flex-start;
+}
+.book-edit-form__btns__right{
+	display:flex;
+	justify-content: flex-end;
+}
+
+.book-box__bottom{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin:30px;
+}
+.book-box__bottom > button{
+	width:20%;	
+	height:38px;
+}	

@@ -9,7 +9,7 @@
 <body>
 	<main>	
 		<div>
-			<p>베스트 셀러</p>
+			<div class="page-title">베스트셀러</div>
 		</div>
 	</main>
 </body>

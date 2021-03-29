@@ -9,7 +9,7 @@
 <body>
 	<main>	
 		<div>
-			<p>북마크</p>
+			<div class="page-title">찜 도서</div>
 		</div>
 	</main>
 </body>

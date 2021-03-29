@@ -1,6 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String userId = null;
 
+	if(session.getAttribute("userId")==null)
+	{
+		userId = "로그인";
+	}else{
+		userId = (String)session.getAttribute("userId");
+	}
+	
+%>
 <body>
     <!--=================================================-->
     <nav class="nav-1">
@@ -29,8 +39,8 @@
                 <li class="sep-menu__mypage">
                     <div class="sep-menu__mypage__wrap">
                         <div class="sep-menu__mypage__wrap__info">
-                            <i class="fas fa-user-circle fa-lg"></i>
-                            <span><a href="/BOOKFLEA/index.jsp?sec=my">Login</a></span>
+                            <i class="fas fa-user-circle fa-lg" style="color:#323232;"></i>
+                            <span><a href="/BOOKFLEA/index.jsp?sec=my"><%=userId%></a></span>
                         </div>
                         <div class="sep-menu__mypage__wrap__signout">
                             <i class="fas fa-sign-in-alt"></i>

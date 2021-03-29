@@ -8,6 +8,8 @@
 @import "./component/main.css";
 
 @import "./page/sign.css";
+@import "./page/my.css";
+@import "./page/all.css";
 
 body{
     font-family: "Open Sans", sans-serif;
