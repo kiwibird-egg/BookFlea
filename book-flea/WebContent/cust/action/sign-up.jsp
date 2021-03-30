@@ -11,20 +11,20 @@
     	String userName = null;
     	String userEmail = null;
     	
-    	if(request.getParameter("userId") != null){
-    		userId = (String)request.getParameter("userId");
+    	if(request.getParameter("id") != null){
+    		userId = (String)request.getParameter("id");
     	}
-    	if(request.getParameter("userPw") != null){
-    		userPw = (String)request.getParameter("userPw");
+    	if(request.getParameter("pw") != null){
+    		userPw = (String)request.getParameter("pw");
     	}
-    	if(request.getParameter("userPwRe") != null){
-    		userPwRe = (String)request.getParameter("userPwRe");
+    	if(request.getParameter("pwre") != null){
+    		userPwRe = (String)request.getParameter("pwre");
     	}
-    	if(request.getParameter("userName") != null){
-    		userName = (String)request.getParameter("userName");
+    	if(request.getParameter("name") != null){
+    		userName = (String)request.getParameter("name");
     	}
-    	if(request.getParameter("userEmail") != null){
-    		userEmail = (String)request.getParameter("userEmail");
+    	if(request.getParameter("email") != null){
+    		userEmail = (String)request.getParameter("email");
     	}
     	
     	if(userId == null || userPw == null || userPwRe==null || userName==null || userEmail==null) {

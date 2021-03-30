@@ -46,7 +46,7 @@
 	border: var(--border);
 	border-radius:6px;
 	margin: 10px 0px; /*!!!!!!!!!!!!!!!!!*/
-	background-color:rgba(0,0,0,0);
+	background-color:#1E1F21;
 	color: white;
 }
 .sign-text:focus{

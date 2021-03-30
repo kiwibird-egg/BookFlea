@@ -3,6 +3,7 @@
 <%@ page import = "l_books.L_BooksDAO" %>
 <%@ page import = "l_books.L_BooksDTO" %>
 <%@ page import = "java.util.ArrayList" %>
+<%@ page import = "java.io.PrintWriter" %>   
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +11,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%	
+	if(session.getAttribute("adminId")==null){
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("location.href ='?sec=sign-in'");
+		script.println("</script>");
+	}
+%>
 	<main>	
 		<div class="wrap">
 			<div class="page-title">
-				<a href="?sec=book">도서관리</a>
+				<a href="#">도서관리</a>
 			</div>
 			<div class="box box-col" style="padding:10px 0;">
 				

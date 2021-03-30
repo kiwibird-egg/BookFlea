@@ -12,21 +12,41 @@
 		color:white;
 	}
 </style>
+<%	
+String sec = null;
+sec = request.getParameter("sec");
+try{
+	if(sec.equals("sign-in")){
+		%> 
+	
+	<style>
+		main{
+			height:1px;
+		}
+	</style>
+	<%
+	}
+}catch(Exception e){
+	e.printStackTrace();
+}
+%>
 </head>
 <body>
 	
 	<jsp:include page='admin/component/nav.jsp' />
 	<%
-	String sec = request.getParameter("sec");
+	
 	if(sec!=null){		
 		switch(sec){
 		case "book":%> <jsp:include page="./admin/page/manage-book.jsp"/> <% break;
 		case "order":%> <jsp:include page="./admin/page/manage-order.jsp"/> <% break;
 		case "user":%><jsp:include page="./admin/page/manage-user.jsp"/> <% break;
+		case "user-edit":%> <jsp:include page="./admin/page/manage-user-edit.jsp"/> <% break;
 		case "my":%><jsp:include page="./admin/page/my.jsp"/> <% break;
 		case "sign-in":%><jsp:include page="./admin/page/sign-in.jsp"/> <% break;
 		case "book-edit":%> <jsp:include page="./admin/page/manage-book-edit.jsp"/> <% break;
 		case "book-add":%> <jsp:include page="./admin/page/manage-book-add.jsp"/> <% break;
+		
 		
 		default :  break;
 		}

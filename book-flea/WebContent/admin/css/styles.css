@@ -11,6 +11,8 @@
 @import "./page/my.css";
 @import "./page/all.css";
 @import "./page/manage-book.css";
+@import "./page/manage-user.css";
+@import "./page/manage-order.css";
 
 body{
     font-family: "Open Sans", sans-serif;

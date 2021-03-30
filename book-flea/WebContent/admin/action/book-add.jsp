@@ -10,6 +10,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%	
+	if(session.getAttribute("adminId")==null){
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("location.href ='?sec=sign-in'");
+		script.println("</script>");
+	}
+%>
 <%
 	String title = null;
 	String author = null;

@@ -100,7 +100,7 @@ public class S_UsersDAO {
 	}
 	
 	public S_UsersDTO getUserInfo(String userId){
-		String SQL = "SELECT NAME,EMAIL FROM S_USERS WHERE USER_ID=?";
+		String SQL = "SELECT A.name, email, b.name FROM S_USERS A, S_CODE B WHERE a.grade=b.code AND user_id=?";
 		Connection conn=null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -114,6 +114,7 @@ public class S_UsersDAO {
 				S_UsersDTO DTO = new S_UsersDTO();
 				DTO.setUserName(rs.getString(1));
 				DTO.setUserEmail(rs.getString(2));
+				DTO.setUserGrade(rs.getString(3));
 				return DTO;
 			}
 		} 
@@ -123,8 +124,51 @@ public class S_UsersDAO {
 		return null;
 	}
 	
+	public int updateUserInfo(String userId, String userName, String userEmail) {
+		String SQL="UPDATE S_Users SET Name=?, Email=? WHERE user_id=?";
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, userName);
+			pstmt.setString(2, userEmail);
+			pstmt.setString(3, userId);
+			
+			return pstmt.executeUpdate();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try { if(conn !=null) conn.close(); } catch (Exception e) {e.printStackTrace();}
+			try { if(pstmt !=null) pstmt.close(); } catch (Exception e) {e.printStackTrace();}
+		}
+		return -1; 
+	}
+	
+	public int deleteUserInfo(String userId) {
+		String SQL="DELETE FROM S_Users WHERE user_id=?";
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, userId);
+			return pstmt.executeUpdate();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try { if(conn !=null) conn.close(); } catch (Exception e) {e.printStackTrace();}
+			try { if(pstmt !=null) pstmt.close(); } catch (Exception e) {e.printStackTrace();}
+		}
+		return -1; 
+	}
+	
 	public ArrayList<S_UsersDTO> getUsersList(){
-		String SQL = "SELECT A.user_id, A.name, email, b.name FROM S_USERS A, S_CODE B WHERE a.grade=b.code";
+		String SQL = "SELECT A.user_id, A.name, email, b.name FROM S_USERS A, S_CODE B WHERE a.grade=b.code ";
 		ArrayList<S_UsersDTO> list = new ArrayList<S_UsersDTO>();
 		Connection conn=null;
 		PreparedStatement pstmt = null;

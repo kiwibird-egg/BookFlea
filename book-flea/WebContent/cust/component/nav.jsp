@@ -78,7 +78,7 @@
         </div>
         <div class="nav-2__menu">
             <ul>
-                <li><a href="?sec=book-search">도서명 검색</a></li>
+                <li><a href="?sec=book-search">도서 검색</a></li>
                 <li><a href="?sec=book-best">베스트 셀러</a></li>
                 <li><a href="?sec=book-all">전체 도서</a></li>
             </ul>
