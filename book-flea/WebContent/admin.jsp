@@ -40,6 +40,9 @@ try{
 		switch(sec){
 		case "book":%> <jsp:include page="./admin/page/manage-book.jsp"/> <% break;
 		case "order":%> <jsp:include page="./admin/page/manage-order.jsp"/> <% break;
+		case "order-review":%> <jsp:include page="./admin/page/manage-order-review.jsp"/> <% break;
+		case "order-selling":%> <jsp:include page="./admin/page/manage-order-selling.jsp"/> <% break;
+		case "order-sold":%> <jsp:include page="./admin/page/manage-order-sold.jsp"/> <% break;
 		case "user":%><jsp:include page="./admin/page/manage-user.jsp"/> <% break;
 		case "user-edit":%> <jsp:include page="./admin/page/manage-user-edit.jsp"/> <% break;
 		case "my":%><jsp:include page="./admin/page/my.jsp"/> <% break;

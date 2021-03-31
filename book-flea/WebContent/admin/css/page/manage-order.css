@@ -1,0 +1,27 @@
+.unreviewed-list{
+	
+}
+
+.unreviewed-list__li{
+	padding:10px 20px;
+	display:flex;
+	justify-content: space-between;
+	
+}
+.unreviewed-list__li > div:nth-child(1){ /*판매자*/
+	width: 30%;
+}
+.unreviewed-list__li > div:nth-child(2){ /*도서명*/
+	width: 40%;
+}
+.unreviewed-list__li > div:nth-child(3){ /*도서상태*/
+	width: 20%;
+}
+
+
+
+.unreviewed-list__li-title{
+	font-weight:600;
+	font-size:16px;
+}
+
