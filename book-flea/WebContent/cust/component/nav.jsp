@@ -48,9 +48,9 @@
                     </div>
                 </li>
                 <div class="sep-menu__hr"></div>
-                <li><span class="sep-menu__col"><a href="?sec=book-search">도서명 검색</a></span></li>
-                <li><span class="sep-menu__col"><a href="?sec=book-best">베스트 셀러</a></span></li>
-                <li><span class="sep-menu__col"><a href="?sec=book-all">전체 도서</a></span></li>
+                <li onclick="location.href='?sec=book-search'"><span class="sep-menu__col"><a>도서검색</a></span></li>
+                <li onclick="location.href='?sec=book-best'"><span class="sep-menu__col"><a>베스트셀러</a></span></li>
+                <li onclick="location.href='?sec=book-all'"><span class="sep-menu__col"><a>전체도서</a></span></li>
             </ul>
         </div>
     </nav>
@@ -78,10 +78,10 @@
         </div>
         <div class="nav-2__menu">
             <ul>
-                <li><a href="?sec=book-search">도서 검색</a></li>
-                <li><a href="?sec=book-best">베스트 셀러</a></li>
-                <li><a href="?sec=book-all">전체 도서</a></li>
-            </ul>
+                <li onclick="location.href='?sec=book-search'"><a>도서검색</a></li>
+                <li onclick="location.href='?sec=book-best'"><a>베스트셀러</a></li>
+                <li onclick="location.href='?sec=book-all'"><a>전체도서</a></li>
+           </ul>
         </div>
     </nav>
     <!--=================================================-->

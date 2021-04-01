@@ -48,9 +48,9 @@
                     </div>
                 </li>
                 <div class="sep-menu__hr"></div>
-                <li><span class="sep-menu__col"><a href="?sec=book">도서관리</a></span></li>
-                <li><span class="sep-menu__col"><a href="?sec=order">주문관리</a></span></li>
-                <li><span class="sep-menu__col"><a href="?sec=user">유저관리</a></span></li>
+                <li onclick="location.href='?sec=book'"><span class="sep-menu__col"><a>도서관리</a></span></li>
+                <li onclick="location.href='?sec=order'"><span class="sep-menu__col"><a>주문관리</a></span></li>
+                <li onclick="location.href='?sec=user'"><span class="sep-menu__col"><a>유저관리</a></span></li>
             </ul>
         </div>
     </nav>
@@ -78,9 +78,9 @@
         </div>
         <div class="nav-2__menu">
             <ul>
-            	<li><a href="?sec=book">도서관리</a></li>
-                <li><a href="?sec=order">주문관리</a></li>
-                <li><a href="?sec=user">유저관리</a></li>
+            	 <li onclick="location.href='?sec=book'"><a>도서관리</a></li>
+                <li onclick="location.href='?sec=order'"><a>주문관리</a></li>
+                <li onclick="location.href='?sec=user'"><a>유저관리</a></li>
             </ul>
         </div>
     </nav>

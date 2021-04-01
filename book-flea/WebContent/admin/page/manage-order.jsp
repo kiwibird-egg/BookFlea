@@ -11,6 +11,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%	
+	if(session.getAttribute("adminId")==null){
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("location.href ='?sec=sign-in'");
+		script.println("</script>");
+	}
+%>
 	<main>	
 		<div class="wrap">
 		<!-- ======================================== -->
@@ -23,7 +31,7 @@
 				<%
 					if(list.size()!=0){
 						%>
-						<span style="display:flex; justify-content:center; align-items:center; text-align:center;font-size:12px; color:white; height:16px; width:16px;border-radius:50%; margin:0px 5px; background-color:red; color:white!important;"><a style=><%=list.size() %></a></span>
+						<span style="padding-right:0px; display:flex; justify-content:center; align-items:center; text-align:center;font-size:12px; color:white; height:16px; width:16px;border-radius:50%; margin:0px 5px; background-color:red; color:white!important;"><a style=><%=list.size() %></a></span>
 						<%
 					}
 				%>
@@ -112,6 +120,7 @@
 				</ul>
 			</div>
 			<!-- ======================================== -->
+
 		</div>
 	</main>
 </body>

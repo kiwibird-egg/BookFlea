@@ -13,6 +13,7 @@
 @import "./page/manage-book.css";
 @import "./page/manage-user.css";
 @import "./page/manage-order.css";
+@import "./page/main.css";
 
 body{
     font-family: "Open Sans", sans-serif;

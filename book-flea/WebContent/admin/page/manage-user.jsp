@@ -24,7 +24,7 @@
 			<div class="page-title">
 				<a href="#">유저관리</a>
 			</div>
-			<div class="box box-col">
+			<div class="box box-col" stlye="padding:10px 0;">
 				<ul class="user-list">
 					<li class="user-list__li user-list__li-title">
 						<div>아이디</div>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>북플리-관리페이지</title>
 <link rel="stylesheet" href="/BOOKFLEA/admin/css/styles.css">
 <style>
 	body{
@@ -15,21 +15,14 @@
 <%	
 String sec = null;
 sec = request.getParameter("sec");
-try{
-	if(sec.equals("sign-in")){
-		%> 
-	
-	<style>
-		main{
-			height:1px;
-		}
-	</style>
-	<%
-	}
-}catch(Exception e){
-	e.printStackTrace();
-}
+
+try{if(sec==null){%> <style>main{height:1px;}</style><%}}
+catch(Exception e){e.printStackTrace();}
+
+try{if(sec.equals("sign-in")){%> <style>main{height:1px;}</style><%}}
+catch(Exception e){e.printStackTrace();}
 %>
+
 </head>
 <body>
 	
@@ -58,9 +51,9 @@ try{
 		%><jsp:include page="./admin/page/main.jsp"/><%
 	}
 	%>
-	
 	<jsp:include page="admin/component/footer.jsp" />
 	<script src="/BOOKFLEA/admin/js/component/nav.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>

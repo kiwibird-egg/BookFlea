@@ -26,7 +26,7 @@
 	align-items:center;
 }
 .box{
-	padding: 20px 0 20px 0;
+	padding: 10px 0 10px 0;
 	width:100%;
 	border: var(--border);
 	border-radius:8px;
