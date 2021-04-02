@@ -39,6 +39,17 @@
 	align-items : center;
 }
 
+.box-row{
+	justify-content:space-between;
+	align-items : center;
+}
+.box-col{
+	flex-direction:column;
+	justify-content:center;
+	align-items:space-evenly;
+}
+
+
 .btn-green{
 	border-radius:6px;
 	font-size:16px;

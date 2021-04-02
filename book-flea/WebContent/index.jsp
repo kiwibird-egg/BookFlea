@@ -3,10 +3,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>북플리-온라인중고도서</title>
 <link rel="stylesheet" href="/BOOKFLEA/cust/css/styles.css">
 </head>
+<%	
+String sec = null;
+if(request.getParameter("sec")!=null){	
+	sec = (String)request.getParameter("sec");	
+}
+	try{if(sec.equals("sign-in")){%> <style>main{height:1px;}</style><%}}
+	catch(Exception e){e.printStackTrace();}
+	try{if(sec.equals("sign-up")){%> <style>main{height:1px;}</style><%}}
+	catch(Exception e){e.printStackTrace();}
+
+%>
 <body>
 	<jsp:include page="./cust/component/nav.jsp" />
 	
@@ -20,10 +31,7 @@
 		</div>
 	</main>
 	<%
-		
-	%>
-	<%
-	String sec = request.getParameter("sec");
+	
 	if(sec!=null){		
 		switch(sec){
 		case "book-search":%> <jsp:include page="./cust/page/book-search.jsp"/> <% break;
@@ -33,6 +41,7 @@
 		case "my": %> <jsp:include page="./cust/page/my.jsp"/> <% break;
 		case "sign-in":%><jsp:include page="./cust/page/sign-in.jsp"/> <% break;
 		case "sign-up":%><jsp:include page="./cust/page/sign-up.jsp"/> <% break;
+		case "book-info":%><jsp:include page="./cust/page/book-info.jsp"/> <% break;
 		default :  break;
 		}
 	}

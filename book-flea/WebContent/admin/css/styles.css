@@ -14,6 +14,7 @@
 @import "./page/manage-user.css";
 @import "./page/manage-order.css";
 @import "./page/main.css";
+@import "./page/upload.css";
 
 body{
     font-family: "Open Sans", sans-serif;

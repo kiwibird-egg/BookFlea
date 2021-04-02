@@ -135,4 +135,76 @@ public class L_BooksDAO {
 		}
 		return -1; 
 	}
+	
+	public int getLowestPrice(int bookNo) {
+		String SQL="SELECT MIN(PRICE) FROM L_ORDERS WHERE BOOK_NO=? AND ORDER_STATE='02001'";
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, bookNo);
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				return (rs.getInt(1));
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try { if(conn !=null) conn.close(); } catch (Exception e) {e.printStackTrace();}
+			try { if(pstmt !=null) pstmt.close(); } catch (Exception e) {e.printStackTrace();}
+		}
+		return -1; 
+	}
+	
+	public int getStock(int bookNo) {
+		String SQL="SELECT count(*) FROM L_ORDERS WHERE BOOK_NO=? AND ORDER_STATE='02001'";
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, bookNo);
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				return (rs.getInt(1));
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try { if(conn !=null) conn.close(); } catch (Exception e) {e.printStackTrace();}
+			try { if(pstmt !=null) pstmt.close(); } catch (Exception e) {e.printStackTrace();}
+		}
+		return -1; 
+	}
+	
+	public ArrayList<L_BooksDTO> getBestNo(){
+		String SQL = "SELECT BOOK_NO FROM (SELECT BOOK_NO, count(*) FROM L_ORDERS GROUP BY BOOK_NO) WHERE rownum <= 5";
+		ArrayList<L_BooksDTO> list = new ArrayList<L_BooksDTO>();
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				L_BooksDTO DTO = new L_BooksDTO();
+				DTO.setBookNo(rs.getInt(1));
+				list.add(DTO);
+			}
+		} 
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
 }

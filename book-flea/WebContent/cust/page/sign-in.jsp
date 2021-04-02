@@ -16,6 +16,7 @@
 						<input type="text" name="userId" placeholder="ID" class="sign-text">
 						<input type="password" name="userPw" placeholder="PW" class="sign-text">
 						<button type="submit" class="sign-submit">Sign In</button>
+						<input type="hidden" name="nav" value=<%=(String)request.getParameter("nav")%>>
 						<div class="sign-box__under">
 							<a href="?sec=sign-up">회원가입</a>
 						</div>

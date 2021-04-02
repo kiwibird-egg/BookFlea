@@ -31,7 +31,7 @@
 	<main>	
 		<div class="wrap">
 			<div class="page-title">나의 정보</div>
-			<div class="box box-row">
+			<div class="box box-row" style="padding:20px 0px;">
 				<div class="my-info-box__info">
 					<span class="my-info-box__info__name">
 						<%=userName+"님"%>

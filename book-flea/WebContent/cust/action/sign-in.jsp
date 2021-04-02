@@ -8,6 +8,9 @@
     	String userId = null;
     	String userPw = null;
     	
+    	String nav=null;
+    	nav = (String)request.getParameter("nav");
+    	
     	if(request.getParameter("userId") != null){
     		userId = (String)request.getParameter("userId");
     	}
@@ -31,8 +34,7 @@
     		session.setAttribute("userId",userId); //세션설정
     		PrintWriter script = response.getWriter();
     		script.println("<script>");
-    		script.println("alert('로그인 성공');");
-    		script.println("location.href='/BOOKFLEA/index.jsp';");
+    		script.println("location.href='/BOOKFLEA/index.jsp?sec="+nav+"';");
     		script.println("</script>");
     		script.close();
     		return;

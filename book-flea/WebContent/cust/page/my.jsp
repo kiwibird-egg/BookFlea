@@ -18,7 +18,7 @@
 	if(session.getAttribute("userId")==null){
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("location.href ='?sec=sign-in'");
+		script.println("location.href ='?sec=sign-in&nav=my'");
 		script.println("</script>");
 	}
 	else{

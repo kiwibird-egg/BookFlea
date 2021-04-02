@@ -16,8 +16,9 @@
 			<a href="?sec=book">도서관리</a>&nbsp> 등록
 		</div>
 			<div class="box box-col">
-				<form action="/BOOKFLEA/admin/action/book-add.jsp" class="book-edit-form">			
+				<form method="post" enctype="multipart/form-data" action="/BOOKFLEA/admin/action/book-add.jsp" class="book-edit-form">			
 					<input type='hidden' name='bookNo'>
+					
 					<ul>
 						<li>
 							<label>도서명</label>
