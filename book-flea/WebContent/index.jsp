@@ -37,11 +37,14 @@ if(request.getParameter("sec")!=null){
 		case "book-search":%> <jsp:include page="./cust/page/book-search.jsp"/> <% break;
 		case "book-best":%> <jsp:include page="./cust/page/book-best.jsp"/> <% break;
 		case "book-all":%><jsp:include page="./cust/page/book-all.jsp"/> <% break;
-		case "book-mark": if(session.getAttribute("userId")==null){response.sendRedirect("?sec=sign-in");} %><jsp:include page="./cust/page/book-mark.jsp"/> <% break;
+		case "dibs": if(session.getAttribute("userId")==null){response.sendRedirect("?sec=sign-in");} %><jsp:include page="./cust/page/dibs.jsp"/> <% break;
 		case "my": %> <jsp:include page="./cust/page/my.jsp"/> <% break;
 		case "sign-in":%><jsp:include page="./cust/page/sign-in.jsp"/> <% break;
 		case "sign-up":%><jsp:include page="./cust/page/sign-up.jsp"/> <% break;
 		case "book-info":%><jsp:include page="./cust/page/book-info.jsp"/> <% break;
+		
+		case "buy":%><jsp:include page="./cust/page/book-buy.jsp"/> <% break;
+		case "sell":%><jsp:include page="./cust/page/book-sell.jsp"/> <% break;
 		default :  break;
 		}
 	}

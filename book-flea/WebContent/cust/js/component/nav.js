@@ -27,7 +27,7 @@ signOutBtn.addEventListener('click', ()=>{
 const bookmarkBtn = document.querySelectorAll(".bookmark-wrap");
 bookmarkBtn.forEach(i =>{
     i.addEventListener('click', ()=>{
-        location.href="/BOOKFLEA/index.jsp?sec=book-mark";
+        location.href="/BOOKFLEA/index.jsp?sec=dibs";
     });
 });
 
