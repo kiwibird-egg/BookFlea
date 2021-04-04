@@ -30,7 +30,7 @@
 	else if(result==-1){
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('Error: L_DibsDAO.addDibs() ');");
+		script.println("alert('이미 추가된 도서일 수 있습니다. Error: L_DibsDAO.addDibs() ');");
 		script.println("history.back();");
 		script.println("</script>");
 		script.close();

@@ -137,7 +137,7 @@ public class L_BooksDAO {
 	}
 	
 	public int getLowestPrice(int bookNo) {
-		String SQL="SELECT MIN(PRICE) FROM L_ORDERS WHERE BOOK_NO=? AND ORDER_STATE='02001'";
+		String SQL="SELECT MIN(PRICE) FROM L_ORDERS WHERE BOOK_NO=? AND ORDER_STATE='02002'";
 		Connection conn=null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -162,7 +162,7 @@ public class L_BooksDAO {
 	}
 	
 	public int getStock(int bookNo) {
-		String SQL="SELECT count(*) FROM L_ORDERS WHERE BOOK_NO=? AND ORDER_STATE='02001'";
+		String SQL="SELECT count(*) FROM L_ORDERS WHERE BOOK_NO=? AND ORDER_STATE='02002'";
 		Connection conn=null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;

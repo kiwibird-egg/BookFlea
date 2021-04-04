@@ -12,7 +12,7 @@
 			<div class="page-title">도서검색</div>
 		</div>
 		
-		<div class="box box-col">
+		<div class="box box-col" style="margin-bottom:20px;">
 			<form>
 				<select name="option">
 					<option value="book">도서명</option>
@@ -22,6 +22,9 @@
 				<input type="text" placeholder="검색"/>
 				<button type="submit" >검색</button>
 			</form>
+		</div>
+		<div class="box box-col" style="margin-bottom:20px;">
+			아직 검색 기능을 지원하지 않습니다.
 		</div>
 </main>
 </body>

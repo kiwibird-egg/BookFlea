@@ -262,7 +262,7 @@ public class L_OrdersDAO {
 	}
 	
 	public ArrayList<L_OrdersDTO> getOrdersByBook(int bookNo){
-		String SQL ="SELECT A.ORDER_NO, C.NAME, A.SELLER_ID, A.PRICE FROM L_ORDERS A, L_BOOKS B, S_CODE C WHERE  A.ORDER_STATE='02001' AND A.BOOK_NO=B.BOOK_NO AND A.BOOK_CONDITION=C.CODE AND A.BOOK_NO=?";
+		String SQL ="SELECT A.ORDER_NO, C.NAME, A.SELLER_ID, A.PRICE FROM L_ORDERS A, L_BOOKS B, S_CODE C WHERE  A.ORDER_STATE='02002' AND A.BOOK_NO=B.BOOK_NO AND A.BOOK_CONDITION=C.CODE AND A.BOOK_NO=?";
 		//ORDER_NO, NAME(BOOK_CONDITION), SELLER_ID, PRICE
 		ArrayList<L_OrdersDTO> list = new ArrayList<L_OrdersDTO>();
 		Connection conn = null;
@@ -291,6 +291,52 @@ public class L_OrdersDAO {
 		}
 		return list;
 		
+	}
+	
+	public int sellBook(int bookNo, String condition, String userId, int price ) {
+		String SQL="INSERT INTO L_ORDERS(BOOK_NO, ORDER_STATE, BOOK_CONDITION, SELLER_ID, PRICE) VALUES(?,'02001',?,?,?)";
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, bookNo);
+			pstmt.setString(2, condition);
+			pstmt.setString(3, userId);
+			pstmt.setInt(4, price);
+			
+			return pstmt.executeUpdate();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try { if(conn !=null) conn.close(); } catch (Exception e) {e.printStackTrace();}
+			try { if(pstmt !=null) pstmt.close(); } catch (Exception e) {e.printStackTrace();}
+		}
+		return -1; 
+	}
+	
+	public int buyBook(String userId, int orderNo) {
+		String SQL="UPDATE L_ORDERS SET ORDER_STATE='02003',BUYER_ID=?,  SOLD_DATE=(SELECT SYSDATE FROM DUAL) WHERE ORDER_NO=?";
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, userId);
+			pstmt.setInt(2, orderNo);
+			
+			return pstmt.executeUpdate();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try { if(conn !=null) conn.close(); } catch (Exception e) {e.printStackTrace();}
+			try { if(pstmt !=null) pstmt.close(); } catch (Exception e) {e.printStackTrace();}
+		}
+		return -1; 
 	}
 	
 }

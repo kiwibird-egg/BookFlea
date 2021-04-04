@@ -49,7 +49,7 @@ if(request.getParameter("sec")!=null){
 		}
 	}
 	else{
-		%><main>index!</main><%
+		%><jsp:include page="./cust/page/main.jsp"/><%
 	}
 	%>
 

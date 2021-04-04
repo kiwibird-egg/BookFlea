@@ -17,6 +17,8 @@
 .orders-box > ul > li > div:nth-child(4){
 	width: 20%;
 }
+
+
 /*==============================*/
 .book-box{
 	display:flex;
@@ -41,6 +43,10 @@
 	min-height:20%;
 	display:flex;
 	align-items: center;
+}
+
+.book-box__info-sell > div{
+	min-height:25%;
 }
 
 .book-box__info > div:nth-child(1){

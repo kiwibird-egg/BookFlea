@@ -22,6 +22,7 @@
 		script.println("<script>");
 		script.println("location.href ='?sec=sign-in&nav=dibs'");
 		script.println("</script>");
+		script.close();
 	}
 	else{
 		userId = (String)session.getAttribute("userId");

@@ -76,7 +76,7 @@
 				<div><%=sellerId %></div>
 				<div><%=bookCondition %></div>
 				<div><%=orderPrice %></div>
-				<div><button onclick="location.href='?sec=buy&no=<%=bookNo%>'" style="height:100%;width:100%;"class="btn-green">구매</button></div>
+				<div><button onclick="location.href='/BOOKFLEA/cust/action/order-buy.jsp?orderNo=<%=orderNo %>&sellerId=<%=sellerId %>'" style="height:100%;width:100%;"class="btn-green">구매</button></div>
 			</li>
 			<%
 			}
