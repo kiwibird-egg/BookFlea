@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter" %>    
+<%@ page import = "l_books.L_BooksDAO" %>
+<%@ page import = "l_books.L_BooksDTO" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,24 +11,29 @@
 </head>
 <body>
 <main>	
-		<div>
-			<div class="page-title">도서검색</div>
-		</div>
-		
-		<div class="box box-col" style="margin-bottom:20px;">
-			<form>
-				<select name="option">
-					<option value="book">도서명</option>
-					<option value="author">지은이</option>
-					<option value="publisher">출판사</option>
-				</select>
-				<input type="text" placeholder="검색"/>
-				<button type="submit" >검색</button>
-			</form>
-		</div>
-		<div class="box box-col" style="margin-bottom:20px;">
-			아직 검색 기능을 지원하지 않습니다.
-		</div>
+	<div>
+		<div class="page-title">도서검색</div>
+	</div>
+	
+	<div class="box box-col" style="margin-bottom:20px;">
+		<form>
+			<input name="sec" value="book-search-result" type="hidden"/>
+			<select name="column">
+				<option value="title">도서명</option>
+				<option value="author">지은이</option>
+				<option value="publisher">출판사</option>
+			</select>
+			<input name="text" type="text" placeholder="검색" minlength="1" autofocus required>
+			<input type="submit" value="검색" class="btn-green">
+			
+		</form>
+	</div>
+
+	<div class="box box-col" style="margin-bottom:20px;">
+		<span>검색어를 입력해주세요.</span>
+	</div>
+
+	
 </main>
 </body>
 </html>

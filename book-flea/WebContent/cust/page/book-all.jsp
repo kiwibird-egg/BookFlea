@@ -18,7 +18,6 @@
 		
 					
 				<% 
-			//!!!!!!!!!!!!!!!!!!!!!재고수정해야해
 					L_BooksDAO DAO = new L_BooksDAO();
 					ArrayList<L_BooksDTO> list = DAO.getList();
 					for(int i=0; i<list.size(); i++){

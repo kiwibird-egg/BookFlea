@@ -207,4 +207,33 @@ public class L_BooksDAO {
 		}
 		return list;
 	}
+	
+	public ArrayList<L_BooksDTO> searchBook(String column, String text){
+		text = text.replaceAll(" ", "");
+		String SQL = "SELECT * FROM L_BOOKS WHERE REPLACE("+column+",' ','') LIKE '%"+text+"%'";
+		System.out.println(SQL);
+		ArrayList<L_BooksDTO> list = new ArrayList<L_BooksDTO>();
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				L_BooksDTO DTO = new L_BooksDTO();
+				DTO.setBookNo(rs.getInt(1));
+				DTO.setTitle(rs.getString(2));
+				DTO.setAuthor(rs.getString(3));
+				DTO.setPublisher(rs.getString(4));
+				DTO.setPrice(rs.getInt(5));
+				DTO.setImage(rs.getString(6));
+				list.add(DTO);
+			}
+		} 
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
 }

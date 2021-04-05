@@ -38,6 +38,10 @@
 		if(request.getParameter("price") != null){
 			price = Integer.parseInt(request.getParameter("price"));
 		}
+		System.out.println(title);
+		System.out.println(author);
+		System.out.println(publisher);
+		System.out.println(price);
 	}catch(Exception e){
 		PrintWriter script = response.getWriter();
 		script.println("<script>");

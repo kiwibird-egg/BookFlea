@@ -72,7 +72,7 @@ if(result==1){
 	PrintWriter script = response.getWriter();
 	script.println("<script>");
 	script.println("alert('판매 신청이 완료되었습니다.');");
-	script.println("history.back()");
+	script.println("location.href='/BOOKFLEA/index.jsp?sec=my'");
 	script.println("</script>");
 	script.close();
 }else{
