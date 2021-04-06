@@ -34,7 +34,7 @@
     		session.setAttribute("userId",userId); //세션설정
     		PrintWriter script = response.getWriter();
     		script.println("<script>");
-    		script.println("location.href='/BOOKFLEA/index.jsp?sec="+nav+"';");
+    		script.println("location.href='/BOOKFLEA/index.jsp?';");
     		script.println("</script>");
     		script.close();
     		return;

@@ -8,8 +8,19 @@
 </head>
 <body>
 	<main>
-		<div class="box">
-			This is index.jsp ?sec=main !! 
+		<div class="main-wrap">
+			<h2>[&nbspBOOK:FLEA&nbsp]</h2>
+			<h2></h2>
+			<div class="box" onclick="location.href='?sec=book-search'">
+				도서검색 >
+			</div>	
+			<div class="box" onclick="location.href='?sec=book-best'">
+				베스트셀러 >
+			</div>	
+			<div class="box" onclick="location.href='?sec=book-all'">
+				전체도서 >
+			</div>	
+			<h2 style="opacity:0%;">[&nbspBOOK:FLEA&nbsp]</h2>
 		</div>
 	</main>
 </body>

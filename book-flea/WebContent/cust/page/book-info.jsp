@@ -15,7 +15,7 @@
 <%
 	Integer bookNo = null;
 	if(request.getParameter("no")!=null){
-		bookNo = Integer.parseInt((String)request.getParameter("no"));
+		bookNo = Integer.parseInt(request.getParameter("no"));
 	}
 	L_BooksDAO DAO = new L_BooksDAO();
 	String bookTitle = DAO.getBookInfo(bookNo).getTitle();

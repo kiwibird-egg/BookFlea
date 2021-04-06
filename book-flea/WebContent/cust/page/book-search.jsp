@@ -16,15 +16,17 @@
 	</div>
 	
 	<div class="box box-col" style="margin-bottom:20px;">
-		<form>
+		<form class="form-search">
 			<input name="sec" value="book-search-result" type="hidden"/>
-			<select name="column">
-				<option value="title">도서명</option>
-				<option value="author">지은이</option>
-				<option value="publisher">출판사</option>
-			</select>
-			<input name="text" type="text" placeholder="검색" minlength="1" autofocus required>
-			<input type="submit" value="검색" class="btn-green">
+			<div class="search-box">
+				<select name="column"  style="height:38px;">
+					<option value="title">도서명</option>
+					<option value="author">지은이</option>
+					<option value="publisher">출판사</option>
+				</select>
+				<input name="text" type="text" placeholder="검색" minlength="1" autofocus required style="height:38px;">
+			</div>
+			<input type="submit" value="검색" class="btn-green" style="height:38px; width:100px;">
 			
 		</form>
 	</div>

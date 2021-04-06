@@ -76,6 +76,7 @@
 	padding:30px 0 0 0;
 	width:100%;
 	}
+	
 }
 
 @media (min-width:426px) and (max-width:768px){
@@ -85,3 +86,30 @@
 
 }
 
+.form-search{
+	padding-left:20px;
+	padding-right:20px;
+	width:100%;
+	display:flex;
+}
+.search-box{
+	width:calc(100% - 100px);
+	display:flex;
+	border: var(--border);
+	
+	margin-right:10px;
+}
+.search-box > select:nth-child(1){
+	padding-left:10px;
+	width:80px;
+	border : none;
+	cursor:pointer;
+}
+.search-box > select:nth-child(1):focus{
+	outline:none;
+}
+.search-box > input:nth-child(2){
+	margin-left:10px;
+	width:calc(100% - 80px);
+	border: none;
+}

@@ -19,7 +19,7 @@
 <body>
 	<main>
 		<div class="page-title">도서상세 > 도서구매</div>
-		<div class="box ">
+		<div class="box" style="display:flex; justify-content: center; padding:50px 0px;">
 			구매가 완료되었습니다. 구매목록은 마이페이지에서 확인하실 수 있습니다.
 		</div>	
 		

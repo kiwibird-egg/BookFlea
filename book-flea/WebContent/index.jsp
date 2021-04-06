@@ -11,7 +11,9 @@
 String sec = null;
 if(request.getParameter("sec")!=null){	
 	sec = (String)request.getParameter("sec");	
-}
+}	
+	try{if(sec==null){%> <style>main{height:1px;}</style><%}}
+	catch(Exception e){e.printStackTrace();}
 	try{if(sec.equals("sign-in")){%> <style>main{height:1px;}</style><%}}
 	catch(Exception e){e.printStackTrace();}
 	try{if(sec.equals("sign-up")){%> <style>main{height:1px;}</style><%}}

@@ -43,15 +43,17 @@ if(request.getParameter("text")!=null){
 	</div>
 	
 	<div class="box box-col" style="margin-bottom:20px;">
-		<form>
-			<input name="sec" value="book-search-result" type="hidden"/>
-			<select name="column">
-				<option value="title" <%if(column.equals("title")) {%> selected <%}%>>도서명</option>
-				<option value="author" <%if(column.equals("author")) {%> selected <%}%>>지은이</option>
-				<option value="publisher" <%if(column.equals("publisher")) {%> selected <%}%>>출판사</option>
-			</select>
-			<input name="text" type="text" placeholder="검색" minlength="1" value="<%=text %>" required>
-			<input type="submit" class="btn-green">
+		<form class="form-search">
+				<input name="sec" value="book-search-result" type="hidden"/>
+			<div class="search-box">
+				<select name="column">
+					<option value="title" <%if(column.equals("title")) {%> selected <%}%>>도서명</option>
+					<option value="author" <%if(column.equals("author")) {%> selected <%}%>>지은이</option>
+					<option value="publisher" <%if(column.equals("publisher")) {%> selected <%}%>>출판사</option>
+				</select>
+				<input name="text" type="text" placeholder="검색" minlength="1" value="<%=text %>" required>
+			</div>
+			<input type="submit" class="btn-green" style="height:38px; width:100px;">
 		</form>
 	</div>
 	<%
