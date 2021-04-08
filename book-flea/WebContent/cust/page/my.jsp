@@ -41,8 +41,8 @@
 					</span>
 				</div>
 				<div class="my-info-box__btns">
-					<button class="btn-green my-info-box__btns__edit" onclick="alert('not yet')">정보변경</button>
-					<button class="btn-white my-info-box__btns__sign-out" onclick="location.href='/BOOKFLEA/cust/action/sign-out.jsp'">로그아웃</button>
+					
+					<button class="btn-green my-info-box__btns__sign-out" onclick="location.href='/BOOKFLEA/cust/action/sign-out.jsp'">로그아웃</button>
 				</div>
 			</div>
 			
